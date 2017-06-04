@@ -1,21 +1,22 @@
 ## Installing
 
-- clone this project. and cd into root directory
-- run composer update and do generate app key: 
+- Clone this project. and cd into root directory
+- Copy .env.example file and make your own .env file with your appropriated database's info
+- Run composer update and do generate app key: 
 ```
 $ composer update && composer key:generate
 ```
-- running auto load task
+- Running auto load task
 
 ```
 $ php artisan dump-autoload
 ```
 
-- running default user: 
+- Running default user: 
 ```
 $ php artisan db:seed
 ```
-- start server by: 
+- Start server by: 
 ```
 $ php artisan serve
 ```
