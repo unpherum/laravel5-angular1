@@ -9,7 +9,7 @@ $ composer update && php artisan key:generate
 - Running auto load task
 
 ```
-$ php artisan dump-autoload
+$ composer dump-autoload
 ```
 
 - Running default user: 
