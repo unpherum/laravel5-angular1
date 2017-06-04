@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .controller('HomeController', HomeController);
 
     HomeController.$inject = ['$window', '$rootScope', '$state', 'HomeService', '$localForage', '$timeout', 'Notification'];

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .controller('NameController', NameController);
 
     NameController.$inject = ['$window', '$rootScope', '$state', 'NameService', '$localForage', '$timeout', 'Notification'];

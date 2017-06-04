@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .directive('noDirty', noDirty);
 
     function noDirty() {

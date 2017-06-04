@@ -2,7 +2,7 @@
         'use strict';
 
         angular
-            .module('RXIN.app', [
+            .module('camsian.app', [
                 'ngAnimate',
                 'ngTouch',
                 'ui.router',
@@ -42,24 +42,6 @@
                     controller: 'LoginController',
                     controllerAs: 'vm',
                     resolve: {
-                    }
-                })
-                .state('rates', {
-                    url: "/rates",
-                    templateUrl: './scripts/rates/rates.html',
-                    controller: 'RatesController',
-                    controllerAs: 'vm',
-                    resolve: {
-                        userDetails: getUserDetails
-                    }
-                })
-                .state('employees', {
-                    url: "/employees",
-                    templateUrl: './scripts/employees/employees.html',
-                    controller: 'EmployeesController',
-                    controllerAs: 'vm',
-                    resolve: {
-                        userDetails: getUserDetails
                     }
                 })
                 .state('settings', {

@@ -11,14 +11,14 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .directive('showSyncStatus', showSyncStatus);
 
     function showSyncStatus() {
         var directive = {
             restrict: 'E',
             transclude: true,
-            templateUrl: './javascripts/common/show_sync_status.html',
+            templateUrl: './scripts/common/show_sync_status.html',
             scope: {
                 status: '=',
                 hideText: '='

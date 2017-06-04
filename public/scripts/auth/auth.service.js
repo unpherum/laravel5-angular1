@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .factory('AuthService', AuthService);
 
     AuthService.$inject = ['$http', '$q', '$log', '$localForage', '$crypto', '$rootScope', '$state']

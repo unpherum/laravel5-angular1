@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .controller('LoginController', LoginController);
 
     LoginController.$inject = ['$rootScope', '$localForage', '$state', '$window', '$timeout', '$scope', 'AuthService', 'Notification', '$crypto', '$log'];

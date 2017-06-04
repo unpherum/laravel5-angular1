@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .controller('LogoutController', LogoutController);
 
     LogoutController.$inject = ['$window', '$timeout', 'AuthService'];

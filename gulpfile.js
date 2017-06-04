@@ -22,7 +22,6 @@ elixir(function (mix) {
             "bootstrap.css",
             "bootstrap-datetimepicker.css",
             "bootstrap-switch.css",
-            "bootstrap-datatables.css",
             "../../../node_modules/font-awesome/css/font-awesome.css"
         ], "resources/assets/css/build/libs.css")
         .sass([
@@ -44,7 +43,6 @@ elixir(function (mix) {
         "libs/bootstrap.min.js",
         "libs/bootstrap-switch.min.js",
         "libs/bootstrap-datatables.min.js",
-        "libs/jquery.datatables.min.js",
         "libs/moment.min.js"
     ], "public/js/camsian-libs.js");
 

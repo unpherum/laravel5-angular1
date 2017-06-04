@@ -24,7 +24,7 @@ CustomInput({
     function customInput(options){
 
 		angular
-	        .module('RXIN.app')
+	        .module('camsian.app')
 	        .directive(options.name, customInputFunction);
 
 	    customInputFunction = []; 
@@ -140,7 +140,7 @@ CustomInput({
 	customInput({
 		name: "timeInput",
 		restrict: 'E',
-		templateUrl: './javascripts/common/custom_input_control.html',
+		templateUrl: './scripts/common/custom_input_control.html',
 		clickSelectsAll: true,
 		parser: parseTime,
 		formatter: function(modelValue) {

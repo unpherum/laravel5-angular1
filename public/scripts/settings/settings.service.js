@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .factory('SettingsService', SettingsService);
 
     SettingsService.$inject = ['$http', '$log', '$rootScope', '$localForage'];

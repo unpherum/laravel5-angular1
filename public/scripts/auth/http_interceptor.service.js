@@ -4,7 +4,7 @@
     'use strict';
     
     angular
-        .module('RXIN.app')
+        .module('camsian.app')
         .factory('HttpInterceptor', HttpInterceptor);
     
     HttpInterceptor.$inject = [ '$q', '$log', '$rootScope', '$window', '$crypto', '$localForage', '$injector', '$sce']
