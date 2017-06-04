@@ -4,14 +4,16 @@
 - Copy .env.example file and make your own .env file with your appropriated database's info
 - Run composer update and do generate app key: 
 ```
-$ composer update && composer key:generate
+$ composer update && php artisan key:generate
 ```
 - Running auto load task
-
 ```
-$ php artisan dump-autoload
+$ composer dump-autoload
 ```
-
+- Running migrate tables: 
+```
+$ php artisan migrate
+```
 - Running default user: 
 ```
 $ php artisan db:seed
@@ -20,12 +22,10 @@ $ php artisan db:seed
 ```
 $ php artisan serve
 ```
-
 - Installing some node dependencies: 
 ```
 $ npm install
 ```
-
 - And run gulp for angular libs and styles: 
 ```
 # gulp
