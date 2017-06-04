@@ -1,45 +1,34 @@
 ## Installing
 
-- clone this project. and cd into root directory
-- run composer update and do generate app key: 
+- Clone this project. and cd into root directory
+- Copy .env.example file and make your own .env file with your appropriated database's info
+- Run composer update and do generate app key: 
 ```
-#!php
-
-composer update && composer key:generate
+$ composer update && composer key:generate
 ```
-- running auto load task
+- Running auto load task
 
 ```
-
-#!php
-php artisan dump-autoload
+$ php artisan dump-autoload
 ```
 
-- running default user: 
+- Running default user: 
 ```
-#!php
-
-php artisan db:seed
+$ php artisan db:seed
 ```
-- start server by: 
+- Start server by: 
 ```
-#!php
-
-php artisan serve
+$ php artisan serve
 ```
 
 - Installing some node dependencies: 
 ```
-#!php
-
-npm install
+$ npm install
 ```
 
 - And run gulp for angular libs and styles: 
 ```
-#!php
-
-gulp
+# gulp
 ```
 
-*default user after seeding is user: admin@5andhalf.com pass: admin
+Now you can open the brower with http://localhost:8000
