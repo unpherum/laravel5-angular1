@@ -29,3 +29,5 @@ $ npm install
 ```
 # gulp
 ```
+
+Now you can open the brower with http://localhost:8000
