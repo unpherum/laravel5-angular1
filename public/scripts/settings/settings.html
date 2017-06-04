@@ -1,0 +1,59 @@
+<div id="loading-overlay" ng-if="vm.isProcessing"></div>
+<div class="container content-wrapper settings">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+        	<h3 class="text-left">API Settings</h3>
+        	
+        	<button ng-click="vm.save()" class="btn btn-save">Save</button>
+        	
+        </div>
+        <div class="panel-body">
+            <div class="">
+            	<div class="col-xs-6">Connect to Assignar</div>
+            	<div class="col-xs-6">Xero</div>
+            </div>
+            <div class="row">
+            	<div class="col-xs-6">
+            		<div class="col-xs-12">
+            			<label>Tennant ID</label>
+            		</div>
+            		<div class="col-xs-6">
+            			<input type="text" class="form-control" value="" name="tennantId" ng-model="vm.connect.id" />
+            		</div>
+            		
+            	</div>
+            	
+            </div>
+
+            <div class="row">
+            	<div class="col-xs-6">
+            		<div class="col-xs-12">
+            			<label>Username</label>
+            		</div>
+            		<div class="col-xs-6">
+            			<input type="text" class="form-control" value="" name="username" ng-model="vm.connect.username" />
+            		</div>
+            	</div>
+
+            	<div class="col-xs-6">
+            		<button class="btn btn-connect"></button>
+            	</div>
+            
+            </div>
+
+            <div class="row">
+            	<div class="col-xs-6">
+            		<div class="col-xs-12">
+            			<label>Password</label>
+            		</div>
+            		<div class="col-xs-6">
+            			<input type="text" class="form-control" value="" name="password" ng-model="vm.connect.password" />
+            		</div>
+            	</div>
+            
+            </div>
+
+        </div>
+    </div>
+
+</div>

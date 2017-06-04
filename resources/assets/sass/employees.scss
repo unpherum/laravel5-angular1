@@ -1,0 +1,33 @@
+.employees{
+	label{
+		color: #C0B1B1;
+		font-size: 11px;
+	}
+	.btn{
+		background-color:white;
+		color:black;
+		border: 1px solid #DDD;
+		
+		&.btn-save{
+			float: right;
+		    position: relative;
+		    top: -45px;
+		    width: 100px;
+		    &:hover{
+		    	background-color: #DDE;
+		    }
+		}
+
+	}
+
+	.unallocated-employees,
+	.allocated-employees{
+		.row{
+			padding: 10px 0;
+			i{
+				font-size: 12px;
+    			color: #BABDBE;
+			}
+		}
+	}
+}

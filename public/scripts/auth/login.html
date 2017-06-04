@@ -1,0 +1,43 @@
+<div class="col-md-6 col-md-offset-3" ng-if="!vm.isRedirect">
+    <div class="content-wrapper">
+        
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Login</h3>
+        </div>
+        <div class="panel-body">
+            <form name="vm.form" ng-submit="vm.login()" role="form" novalidate>
+                <div class="form-group" ng-class="{ 'has-error': (vm.form.email.$dirty && (vm.form.email.$error.required||vm.form.email.$error.email )) || vm.errorMessage}">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" ng-model="vm.email" required autofocus/>
+                    <span ng-show="vm.form.email.$dirty && vm.form.email.$error.required" class="help-block">Email is required</span>
+                    <span ng-show="vm.form.email.$dirty && vm.form.email.$error.email" class="help-block">Please enter a valid email address</span>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error': (vm.form.password.$dirty && vm.form.password.$error.required) || vm.errorMessage }">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+                    <span ng-show="vm.form.password.$dirty && vm.form.password.$error.required" class="help-block">Password is required</span>
+                </div>
+                <div class="alert alert-danger" ng-if="vm.errorMessage">
+                    {{vm.errorMessage}}
+                </div>
+                <div class="form-actions">
+                    <button type="submit" ng-disabled="vm.form.$invalid || vm.dataLoading" class="btn btn-primary">
+                        <span ng-if="vm.dataLoading">
+                            <i class="fa fa-spinner fa-spin fa-fw"></i>
+                            <span class="sr-only">Loading...</span>
+                        </span>
+                         Login
+                    </button>
+                    <a ui-sref="recover_password" style="margin-left: 20px;">Forgot your password?</a>
+                    <a ui-sref="signup" style="margin-left: 20px;">Sign up</a>
+                </div>
+                <div class="alert alert-info" ng-if="vm.infoMessage" style="margin-top:20px;">
+                    {{vm.infoMessage}}
+                </div>
+            </form>
+        </div>
+
+    
+    </div>
+</div>

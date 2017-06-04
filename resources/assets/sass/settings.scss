@@ -1,0 +1,29 @@
+.settings{
+	label{
+		color: #C0B1B1;
+		font-size: 11px;
+	}
+	.btn{
+		background-color:white;
+		color:black;
+		border: 1px solid #DDD;
+		
+		&.btn-save{
+			float: right;
+		    position: relative;
+		    top: -45px;
+		    width: 100px;
+		    &:hover{
+		    	background-color: #DDE;
+		    }
+		}
+
+		&.btn-connect{
+			background-image: url("../img/connect_xero_button_blue1.png") no-repeat;
+			width: 148px;
+			height: 39px;
+			background-repeat: no-repeat;
+		}
+
+	}
+}
