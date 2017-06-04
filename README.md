@@ -4,7 +4,7 @@
 - Copy .env.example file and make your own .env file with your appropriated database's info
 - Run composer update and do generate app key: 
 ```
-$ composer update && composer key:generate
+$ composer update && php artisan key:generate
 ```
 - Running auto load task
 
