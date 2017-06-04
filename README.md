@@ -7,11 +7,13 @@
 $ composer update && php artisan key:generate
 ```
 - Running auto load task
-
 ```
 $ composer dump-autoload
 ```
-
+- Running migrate tables: 
+```
+$ php artisan migrate
+```
 - Running default user: 
 ```
 $ php artisan db:seed
@@ -20,12 +22,10 @@ $ php artisan db:seed
 ```
 $ php artisan serve
 ```
-
 - Installing some node dependencies: 
 ```
 $ npm install
 ```
-
 - And run gulp for angular libs and styles: 
 ```
 # gulp
