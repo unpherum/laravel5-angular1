@@ -28,7 +28,7 @@ $ npm install
 ```
 - And run gulp for angular libs and styles: 
 ```
-# gulp
+$ gulp
 ```
 
 Now you can open the brower with http://localhost:8000
